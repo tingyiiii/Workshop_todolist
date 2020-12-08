@@ -13,7 +13,12 @@ document.addEventListener('DOMContentLoaded', function(){
     li.appendChild(span)
     list.insertAdjacentElement('beforeend', li)
 
-    checked_deleted()
+    li.addEventListener('click', function(){
+      li.classList.toggle('checked')
+    })
+    span.addEventListener('click', function(){
+      li.remove()
+    })
   })
 })
 

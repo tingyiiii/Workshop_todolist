@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   circle.addEventListener('dragend', function(){
     console.log('dragend')
+    
   })
 
   // //target
